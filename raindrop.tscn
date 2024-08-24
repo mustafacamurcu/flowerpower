@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj88lwmyqu45"]
+
+[ext_resource type="Script" path="res://raindrop.gd" id="1_xlj34"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ycs1m"]
+radius = 100.0
+
+[node name="Raindrop" type="Area2D"]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_xlj34")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 1)
+shape = SubResource("CircleShape2D_ycs1m")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(-168, -175)
+color = Color(0, 0.624312, 0.624481, 1)
+polygon = PackedVector2Array(77, 110, 227, 65, 302, 176, 161, 294, 42, 225)

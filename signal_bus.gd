@@ -1,0 +1,4 @@
+extends Node
+
+signal raindrop_collected
+signal raindrop_missed
